@@ -1,5 +1,5 @@
 package aula001;
-
+    //Aula de construtores, Sobrecarga e Herança --  O. Objt
 public class AulaConstrutor {
 
     public static void main(String[] args) {
@@ -10,8 +10,14 @@ public class AulaConstrutor {
         p.setNome("Juliana");
         System.out.println(p.nome);
 
-        Carro c1 = new Carro("WV", "Virtus", 2021);
-        c1.setVariante("Incrivel");
-        System.out.println(c1.info());
+        Carro c1 = new Carro("2021","VW","Virtus",4);
+        c1.info();
+        c1.setVariante("Carro incrivel!");
+        c1.info();
+
+        Moto m1 = new Moto("2001","Honda","CG125",125f,"Eletrica");
+        m1.info();
+
+        // Exemplos de equals
     }
 }

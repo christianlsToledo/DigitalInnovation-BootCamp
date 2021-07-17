@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="computador"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-06-18 06:59:57 "/>
+        <attribute name="created" value="Y29tcHV0YWRvcjtERVNLVE9QLTZQVE5JTjI7MjAyMS0wNi0xODsiMDY6Mzk6MjcgIjszMzY4"/>
+        <attribute name="edited" value="Y29tcHV0YWRvcjtERVNLVE9QLTZQVE5JTjI7MjAyMS0wNi0xODsiMDY6NTk6NTcgIjsxOzM0ODE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jan, fev, mar, abr, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe faturamento Janeiro: R$ &quot;" newline="True"/>
+            <input variable="jan"/>
+            <output expression="&quot;Informe faturamento Fevereiro: R$ &quot;" newline="True"/>
+            <input variable="fev"/>
+            <output expression="&quot;Informe faturamento Mar&#231;o: R$ &quot;" newline="True"/>
+            <input variable="mar"/>
+            <output expression="&quot;Informe faturamento Abril: R$ &quot;" newline="True"/>
+            <input variable="abr"/>
+            <assign variable="media" expression="(jan+fev+mar+abr)/4"/>
+            <if expression="media&gt;=5000">
+                <then>
+                    <output expression="&quot;Parabens, sua meta foi alcan&#231;ada e voc&#234; receber&#225; um bonus de 10%&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente voc&#234; n&#227;o atingiu a meta e seu bon&#251;s ser&#225; de 3%.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

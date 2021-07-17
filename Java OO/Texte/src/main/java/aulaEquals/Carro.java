@@ -1,4 +1,4 @@
-package aula001;
+package aulaEquals;
 
 public class Carro extends Veiculo {
     private int nPortas;
@@ -16,12 +16,14 @@ public class Carro extends Veiculo {
     public int getnPortas(){
         return this.nPortas;
     }
+
     public void setVariante(String obs){
         this.variante = obs;
     }
     public String getVariante(){
         return this.variante;
     }
+
     public void info(){
         System.out.println("Ano: "+this.getAno());
         System.out.println("Marca: "+this.getMarca());
@@ -29,4 +31,6 @@ public class Carro extends Veiculo {
         System.out.println("Quant. Portas: "+getnPortas());
         System.out.println("Observações: "+getVariante());
     }
+
+
 }
